@@ -1,0 +1,141 @@
+/* * Karena Theme - White Glowing Smooth
+ * A premium, minimalist aesthetic for Spicetify.
+ */
+
+:root {
+  --spice-glow-soft: rgba(0, 0, 0, 0.04);
+  --spice-glow-medium: rgba(0, 0, 0, 0.08);
+  --spice-glow-heavy: rgba(0, 0, 0, 0.12);
+  --spice-border: rgba(0, 0, 0, 0.05);
+  --spice-radius-small: 6px;
+  --spice-radius-main: 12px;
+  --spice-radius-large: 24px;
+  --smooth-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* =========================
+   GLOBAL RESET & SMOOTHNESS
+   ========================= */
+* {
+  transition: var(--smooth-transition) !important;
+}
+
+.main-rootlist-rootlist,
+.Root__main-view,
+.main-view-container__scroll-node-child {
+  background-color: var(--spice-main-bg) !important;
+}
+
+/* Scrollbars - Hidden until hover for a cleaner look */
+.os-scrollbar {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.os-host:hover .os-scrollbar {
+  opacity: 1;
+}
+.os-scrollbar-handle {
+  background: var(--spice-button-disabled) !important;
+  border-radius: var(--spice-radius-large) !important;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+.Root__nav-bar {
+  background-color: var(--spice-sidebar) !important;
+  border-right: 1px solid var(--spice-border);
+}
+
+.main-navBar-navBarLink {
+  border-radius: var(--spice-radius-small);
+  color: var(--spice-sidebar-text);
+}
+
+.main-navBar-navBarLinkActive,
+.main-navBar-navBarLink:hover {
+  background-color: var(--spice-glow-soft) !important;
+  color: var(--spice-main-fg);
+  box-shadow: 0 2px 10px var(--spice-glow-soft);
+}
+
+/* =========================
+   MAIN VIEW & CARDS (The Glow)
+   ========================= */
+/* Album/Playlist Cards */
+.main-card-card {
+  background: #ffffff !important;
+  border: 1px solid var(--spice-border);
+  border-radius: var(--spice-radius-main) !important;
+  box-shadow: 0 4px 15px var(--spice-glow-soft);
+  padding: 16px !important;
+}
+
+.main-card-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px var(--spice-glow-medium);
+  border-color: transparent;
+}
+
+.main-card-imageContainer {
+  border-radius: var(--spice-radius-small);
+  overflow: hidden;
+}
+
+/* Top Header Bar */
+.main-topBar-background {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--spice-border);
+}
+
+/* =========================
+   PLAYBAR (Glass & Shadows)
+   ========================= */
+.main-nowPlayingBar-container {
+  background-color: #ffffff !important;
+  border-top: 1px solid var(--spice-border);
+  box-shadow: 0 -4px 20px var(--spice-glow-soft);
+}
+
+/* The Play Button (Center) */
+.main-playPauseButton-button {
+  background-color: var(--spice-main-fg) !important;
+  color: var(--spice-main-bg) !important;
+  box-shadow: 0 4px 12px var(--spice-glow-medium);
+}
+
+.main-playPauseButton-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px var(--spice-glow-heavy);
+}
+
+/* Progress Bar */
+.progress-bar {
+  --bg-color: var(--spice-border);
+  --fg-color: var(--spice-main-fg);
+}
+.progress-bar__slider {
+  box-shadow: 0 2px 6px var(--spice-glow-medium);
+}
+
+/* =========================
+   MENUS & POPUPS
+   ========================= */
+.main-contextMenu-menu {
+  background-color: #ffffff !important;
+  border: 1px solid var(--spice-border);
+  border-radius: var(--spice-radius-main);
+  box-shadow: 0 8px 30px var(--spice-glow-medium);
+}
+
+.main-contextMenu-menuItemButton:hover {
+  background-color: var(--spice-glow-soft) !important;
+  border-radius: var(--spice-radius-small);
+}
+
+.GenericModal {
+  background: #ffffff !important;
+  border-radius: var(--spice-radius-main) !important;
+  box-shadow: 0 10px 40px var(--spice-glow-heavy);
+}

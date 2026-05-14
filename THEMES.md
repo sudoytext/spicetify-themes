@@ -328,3 +328,7 @@ Here you can find a preview of all the themes. Some of them may have different c
 
 ### Blossom
 <img src="https://user-images.githubusercontent.com/72624799/203471073-4a5e6cf0-a5dc-4ecc-9a12-56d5fc716ac4.png" alt="img">
+
+
+#### Karena
+<img src="https://pub-e51713c723754298a118618aac84902d.r2.dev/logo.png" alt="Karena Theme Preview" width="600">
